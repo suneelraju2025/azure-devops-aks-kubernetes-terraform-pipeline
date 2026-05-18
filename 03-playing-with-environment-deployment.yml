@@ -25,6 +25,7 @@ stages:
           deploy:
              steps:
                -  script: echo deploy to dev environment
+               -  bash: echo " QA approval is needed to deploy to QA"
 
 - stage: QADeploy
   jobs:
