@@ -8,12 +8,12 @@ trigger:
 strategy:
   matrix:
     linux:
-      operatingSystem: ubuntu-latest
+      operatingsystem: ubuntu-latest
     mac:
-       operatingSystem: macos-latest
+       operatingsystem: macos-latest
 
 pool:
-  vmImage: $(operatingSystem)
+  vmImage: $(operatingsystem)
 steps:
-- script: echo Hello, world! $(operatingSystem)
+- script: echo Hello, world! $(operatingsystem)
   displayName: 'Run a one-line script'
